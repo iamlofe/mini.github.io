@@ -207,7 +207,6 @@ body {
 
 .bull {
 	background: url(../img/bull.png) top 1em center no-repeat/100%;
-	height: 50vh;
 }
 
 .bull>img,
@@ -221,7 +220,6 @@ body {
 
 .bear {
 	background: url(../img/bear.png) top 1em center no-repeat/100%;
-	height: 50vh;
 }
 
 .vs {
