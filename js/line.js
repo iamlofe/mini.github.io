@@ -72,7 +72,7 @@
         let price = document.createElement('div');
         price.innerText = '$' + i * 100;
         price.style =
-          'color: #BF8FFF; 	font-size:26px; position:absolute; top:-60px; left:-20px';
+          'color: #BF8FFF; 	font-size:1em; position:absolute; top:-60px; left:-0.70em';
         element.appendChild(price);
       }
 
@@ -104,7 +104,7 @@
           let price = document.createElement('div');
           price.innerText = '$' + i * 100;
           price.style =
-            'color: red; 	font-size:16px; position:absolute; top:20px; left:-10px';
+            'color: red; 	font-size:0.5em; position:absolute; top:20px; left:-0.5em';
           element.appendChild(price);
         }
       }
@@ -161,7 +161,7 @@
           let price = document.createElement('div');
           price.innerText = '$' + i * 100;
           price.style =
-            'color: green; 	font-size:16px; position:absolute; top:-30px; left:-15px';
+            'color: green; 	font-size:0.5em; position:absolute; top:-30px; left:-0.7em';
           element.appendChild(price);
         }
       }
