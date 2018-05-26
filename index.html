@@ -26,22 +26,22 @@
 		<div class="list-menu">
 			<ul class="nav-menu">
 				<li class="nav-select bids-list">
-					<a href="#">Bids List</a>
+					<a style="color: white;" href="#">Bids List</a>
 				</li>
 				<li class="nav-select oracles-list">
-					<a href="#">Oracles List</a>
+					<a style="color: white;" href="#">Oracles List</a>
 				</li>
 				<li class="nav-select account-info">
-					<a href="#">Account Info</a>
+					<a style="color: white;" href="#">Account Info</a>
 				</li>
 				<li class="nav-select faq">
-					<a href="#">FAQ</a>
+					<a style="color: white;" href="#">FAQ</a>
 				</li>
 				<li class="nav-select terms">
-					<a href="#">Our terms</a>
+					<a style="color: white;" href="#">Our terms</a>
 				</li>
 				<li class="nav-select" id="exit">
-					<a href="#">Exit</a>
+					<a style="color: white;" href="#">Exit</a>
 				</li>
 			</ul>
 		</div>
@@ -63,7 +63,7 @@
 					<p class="name">bulls</p>
 					<div class="square">11</div>
 				</div>
-				<div class="col-sm-1"></div>
+				<div class="col "></div>
 				<div class="col">
 					<p class="name">bears</p>
 					<div class="square">15</div>
@@ -82,47 +82,52 @@
 			<div>Make prediction</div>
 		</a>
 	</div>
-	<div class="title-result2">
+	<!-- /////////////////////////////////////////////////////// -->
+	<div class="title-result22" id="title-result2" style="display:flex;flex-direction:column;">
+		<div class="column-res" id="column-res1" style="display:flex;flex-direction:row;"></div>
+		<div class="column-res-main" id="column-res2" style="display:flex;flex-direction:row;"></div>
+		<div class="column-res" id="column-res3" style="display:flex;flex-direction:row;"></div>
 	</div>
+
 	<footer>
-		<h2 class="gide">Steps Guide</h2>
+		<h2 style="margin-top:40px;" class="gide">Steps Guide</h2>
 		<div class="row title-result">
-			<div class="col-lg-2 col-md-4 col-sm-6 marg">
+			<div class="col-lg-2 col-md-4 col-4 marg">
 				<img src="img/guide/choose.png" alt="">
 				<p class="desc">
 					1. Choose Condition
 					<br> of your Prediction
 				</p>
 			</div>
-			<div class="col-md-4 col-sm-6 col-lg-2 marg">
+			<div class="col-md-4 col-4 col-lg-2 marg">
 				<img src="img/guide/prediction.png" alt="">
 				<p class="desc">
 					2. Write Prediction
 					<br> and Bid Price
 				</p>
 			</div>
-			<div class="col-md-4 col-sm-6 col-lg-2 marg">
+			<div class="col-md-4 col-4 col-lg-2 marg">
 				<img src="img/guide/btc-cash.png" alt="">
 				<p class="desc">
 					3. Pay by MetaMask
 					<br> your Bid Price
 				</p>
 			</div>
-			<div class="col-md-4 col-sm-6 col-lg-2 marg">
+			<div class="col-md-4 col-4 col-lg-2 marg">
 				<img src="img/guide/successful.png" alt="">
 				<p class="desc">
 					4. You Successful
 					<br> Place the Bid
 				</p>
 			</div>
-			<div class="col-md-4 col-sm-6 col-lg-2 marg">
+			<div class="col-md-4 col-4 col-lg-2 marg">
 				<img src="img/guide/wait.png" alt="">
 				<p class="desc">
 					5. Wait for
 					<br> Prediction Date
 				</p>
 			</div>
-			<div class="col-md-4 col-sm-6 col-lg-2 marg">
+			<div class="col-md-4 col-4 col-lg-2 marg">
 				<img src="img/guide/btc-cash.png" alt="">
 				<p class="desc">
 					6. Withdraw your
@@ -387,8 +392,58 @@
 		</div>
 	</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
 	<script src="js/scripts.js"></script>
+	<script src="js/line.js"></script>
+
+	<style>
+		.diamond {
+			height: 20px;
+			width: 2vw;
+
+		}
+
+		.element1 {
+
+			height: 3px;
+			width: 1.25vw;
+			margin-bottom: 0;
+			margin-top: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			background: #3462A3;
+			position: relative;
+
+		}
+
+
+		.element {
+
+			height: 3px;
+			width: 1.25vw;
+			margin-left: 3px;
+			margin-right: 3px;
+			padding-top: 0;
+			padding-bottom: 0;
+			background: #4A90E2;
+
+		}
+
+		.element13 {
+			position: relative;
+			height: 10px;
+			width: 1.25vw;
+			margin-bottom: 0;
+			margin-top: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			border: 2px solid #3462A3;
+			border-top: none;
+			border-bottom: none;
+			border-left: none;
+		}
+	</style>
 </body>
 
 </html>
