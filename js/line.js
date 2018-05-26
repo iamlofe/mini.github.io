@@ -46,7 +46,7 @@
       where.appendChild(element);
     }
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
       let element = document.createElement('div');
       element.className = 'element';
 
