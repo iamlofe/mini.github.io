@@ -16,34 +16,54 @@
       where.appendChild(element);
     }
 
-    for (let i = 0; i <= 80; i++) {
+    for (let i = 0; i < 80; i++) {
       let element = document.createElement('div');
 
-      element.className = 'element1';
+      // if (i === 80 || i == 0) {
+      //   let img = document.createElement('img');
+      //   img.src = './img/Path.png';
+      //   img.style =
+      //     'height:0.8em;width:0.8em;z-index:4;position:absolute;top:-0.35em; ';
+      //   element.appendChild(img);
+      // }
+
+      if (i == 0 || i == 9 || i == 19 || i == 29) {
+        let img = document.createElement('img');
+        img.src = './img/Path.png';
+        img.style =
+          'height:0.8em;width:0.8em;z-index:4;position:absolute;top:-0.35em; left:-0.4em';
+        element.appendChild(img);
+      }
 
       if (i == 40) {
         let img = document.createElement('img');
         img.src = './img/Path.png';
         img.style =
-          'height:1.0em;width:1.0em;z-index:4;position:absolute;top:-0.45em';
+          'height:1em;width:1em;z-index:4;position:absolute;top:-0.35em; left:-0.4em';
         element.appendChild(img);
-        where.appendChild(element);
-        continue;
       }
 
-      if (i % 10 === 0 || i === 0) {
+      if (i == 49 || i == 59 || i == 69 || i == 79) {
         let img = document.createElement('img');
         img.src = './img/Path.png';
         img.style =
-          'height:0.8em;width:0.8em;z-index:4;position:absolute;top:-0.35em';
+          'height:0.8em;width:0.8em;z-index:4;position:absolute;top:-0.35em;';
         element.appendChild(img);
-
-        where.appendChild(element);
-
-        continue;
       }
 
       where.appendChild(element);
+
+      element.className = 'element1';
+
+      // if (i == 39) {
+      //   let img = document.createElement('img');
+      //   img.src = './img/Path.png';
+      //   img.style =
+      //     'height:1.0em;width:1.0em;z-index:4;position:absolute;top:-0.45em';
+      //   element.appendChild(img);
+      //   where.appendChild(element);
+      //   continue;
+      // }
     }
 
     for (let i = 0; i < 4; i++) {
@@ -61,7 +81,7 @@
       where.appendChild(element);
     }
 
-    for (let i = 0; i <= 80; i++) {
+    for (let i = 0; i < 80; i++) {
       let element = document.createElement('div');
 
       element.className = 'element13';
@@ -138,9 +158,9 @@
         });
 
         element.style =
-          'border: 2px solid #3462A3;border-top: none;border-bottom: none;border-left: none;';
+          'border: 0.06em solid #3462A3;border-top: none;border-bottom: none;border-left: none;';
 
-        if (i % 10 == 0 || i == 0) {
+        if (i % 10 == 0 || i == 0 || i == 79) {
           let price = document.createElement('div');
           price.innerText = '$' + i * 100;
           price.style =
@@ -167,7 +187,7 @@
       where.appendChild(element);
     }
 
-    for (let i = 0; i <= 80; i++) {
+    for (let i = 0; i < 80; i++) {
       let element = document.createElement('div');
 
       // element.addEventListener();
@@ -177,7 +197,7 @@
 
       if (i < 40) {
         element.style =
-          'border: 2px solid #3462A3;border-top: none;border-bottom: none;border-left: none;';
+          'border: 0.06em solid #3462A3;border-top: none;border-bottom: none;border-right: none;';
         let tooltip = document.createElement('div');
 
         element.addEventListener('mouseover', e => {
@@ -246,12 +266,14 @@
           tooltip.innerText = '';
           tooltip.style = 'display:none';
         });
-        if (i % 10 == 0 || i == 0) {
+        if (i % 10 == 0 || i == 0 || i == 79) {
           let price = document.createElement('div');
           price.innerText = '$' + i * 100;
           price.style =
             'color: green; 	font-size:0.5em; position:absolute; top:-30px; left:-1.3em';
           element.appendChild(price);
+          where.appendChild(element);
+          continue;
         }
       }
 
