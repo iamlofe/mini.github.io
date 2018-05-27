@@ -39,7 +39,7 @@
         let img = document.createElement('img');
         img.src = './img/Path.png';
         img.style =
-          'height:1em;width:1em;z-index:4;position:absolute;top:-0.35em; left:-0.4em';
+          'height:1em;width:1em;z-index:4;position:absolute;top:-0.45em; left:-0.4em';
         element.appendChild(img);
       }
 
