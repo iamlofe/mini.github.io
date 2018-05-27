@@ -25,7 +25,7 @@
         let img = document.createElement('img');
         img.src = './img/Path.png';
         img.style =
-          'height:40px;width:40px;z-index:4;position:absolute;top:-18px';
+          'height:1.0em;width:1.0em;z-index:4;position:absolute;top:-0.45em';
         element.appendChild(img);
         where.appendChild(element);
         continue;
@@ -35,7 +35,7 @@
         let img = document.createElement('img');
         img.src = './img/Path.png';
         img.style =
-          'height:1.0em;width:1.0em;z-index:4;position:absolute;top:-0.4em';
+          'height:0.8em;width:0.8em;z-index:4;position:absolute;top:-0.35em';
         element.appendChild(img);
 
         where.appendChild(element);
@@ -46,10 +46,9 @@
       where.appendChild(element);
     }
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
       let element = document.createElement('div');
       element.className = 'element';
-
       where.appendChild(element);
     }
   }
@@ -72,15 +71,56 @@
         let price = document.createElement('div');
         price.innerText = '$' + i * 100;
         price.style =
-          'color: #BF8FFF; 	font-size:1em; position:absolute; top:-60px; left:-0.70em';
+          'color: #BF8FFF; 	font-size:0.7em; position:absolute; top:-60px; left:-0.85em';
         element.appendChild(price);
+      }
+      if (i == 45) {
+        let green = document.createElement('div');
+        green.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px;';
+        element.appendChild(green);
+
+        let green1 = document.createElement('div');
+        green1.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px;top:11px;';
+        element.appendChild(green1);
+
+        let green2 = document.createElement('div');
+        green2.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px; top:22px';
+        element.appendChild(green2);
+
+        let green3 = document.createElement('div');
+        green3.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px; top:33px';
+        element.appendChild(green3);
+      }
+
+      if (i == 75) {
+        let green = document.createElement('div');
+        green.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px;';
+        element.appendChild(green);
+
+        let green1 = document.createElement('div');
+        green1.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px;top:11px;';
+        element.appendChild(green1);
+      }
+
+      if (i == 53) {
+        let green = document.createElement('div');
+        green.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px;';
+        element.appendChild(green);
+
+        let green1 = document.createElement('div');
+        green1.style =
+          'height:10px; width:100%; background:red;position:absolute;z-index:100000px;top:11px;';
+        element.appendChild(green1);
       }
 
       if (i > 40) {
-        element.addEventListener('click', e => {
-          console.log(e);
-          e.target.style = 'background:green';
-        });
         let tooltip = document.createElement('div');
 
         element.addEventListener('mouseover', e => {
@@ -104,11 +144,10 @@
           let price = document.createElement('div');
           price.innerText = '$' + i * 100;
           price.style =
-            'color: red; 	font-size:0.5em; position:absolute; top:20px; left:-0.5em';
+            'color: red; 	font-size:0.5em; position:absolute; top:20px; left:-1.1em';
           element.appendChild(price);
         }
       }
-      if (i % 10 == 1) continue;
       where.appendChild(element);
     }
 
@@ -137,9 +176,6 @@
       element.style = 'border:none';
 
       if (i < 40) {
-        element.addEventListener('click', e => {
-          e.target.style = 'background:red';
-        });
         element.style =
           'border: 2px solid #3462A3;border-top: none;border-bottom: none;border-left: none;';
         let tooltip = document.createElement('div');
@@ -152,6 +188,59 @@
           tooltip.innerText = 'it is our blockk';
           e.target.appendChild(tooltip);
         });
+        if (i == 25) {
+          let green = document.createElement('div');
+          green.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px;';
+          element.appendChild(green);
+
+          let green1 = document.createElement('div');
+          green1.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px;top:-11px;';
+          element.appendChild(green1);
+
+          let green2 = document.createElement('div');
+          green2.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px; top:-22px';
+          element.appendChild(green2);
+
+          let green3 = document.createElement('div');
+          green3.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px; top:-33px';
+          element.appendChild(green3);
+
+          let green4 = document.createElement('div');
+          green4.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px; top:-44px';
+          element.appendChild(green4);
+
+          let green5 = document.createElement('div');
+          green5.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px; top:-55px';
+          element.appendChild(green5);
+        }
+
+        if (i == 23) {
+          let green = document.createElement('div');
+          green.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px;';
+          element.appendChild(green);
+
+          let green1 = document.createElement('div');
+          green1.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px;top:-11px;';
+          element.appendChild(green1);
+
+          let green2 = document.createElement('div');
+          green2.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px; top:-22px';
+          element.appendChild(green2);
+
+          let green3 = document.createElement('div');
+          green3.style =
+            'height:10px; width:100%; background:green;position:absolute;z-index:100000px; top:-33px';
+          element.appendChild(green3);
+        }
 
         element.addEventListener('mouseout', e => {
           tooltip.innerText = '';
@@ -161,7 +250,7 @@
           let price = document.createElement('div');
           price.innerText = '$' + i * 100;
           price.style =
-            'color: green; 	font-size:0.5em; position:absolute; top:-30px; left:-0.7em';
+            'color: green; 	font-size:0.5em; position:absolute; top:-30px; left:-1.3em';
           element.appendChild(price);
         }
       }
