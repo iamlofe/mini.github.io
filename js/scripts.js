@@ -28,3 +28,14 @@ $(document).mouseup(function(e) {
 $('#exit').click(function() {
   $('.list-menu').fadeToggle();
 });
+
+$('.bottom-bet').click(function(){
+       $('.popup').fadeToggle();
+    });
+
+$('.green').click(function(){
+       $('.mask1').fadeToggle();
+    });
+$('.bids').click(function(){
+       $('.bids-list').fadeToggle();
+    });

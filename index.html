@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 
 <body>
@@ -24,28 +23,28 @@
 			</div>
 			<div class="menu-logo">
 				<img src="img/menu-icon.png" class="mobile_menu_click" alt="menu">
-			</div>
-			<div class="list-menu">
-				<ul class="nav-menu">
-					<li class="nav-select bids-list">
-						<a style="color: white;" href="#">Bids List</a>
-					</li>
-					<li class="nav-select oracles-list">
-						<a style="color: white;" href="#">Oracles List</a>
-					</li>
-					<li class="nav-select account-info">
-						<a style="color: white;" href="#">Account Info</a>
-					</li>
-					<li class="nav-select faq">
-						<a style="color: white;" href="#">FAQ</a>
-					</li>
-					<li class="nav-select terms">
-						<a style="color: white;" href="#">Our terms</a>
-					</li>
-					<li class="nav-select" id="exit">
-						<a style="color: white;" href="#">Exit</a>
-					</li>
-				</ul>
+				<div class="list-menu">
+					<ul class="nav-menu">
+						<li class="nav-select bids-list">
+							<a style="color: white;" href="#">Bids List</a>
+						</li>
+						<li class="nav-select oracles-list">
+							<a style="color: white;" href="#">Oracles List</a>
+						</li>
+						<li class="nav-select account-info">
+							<a style="color: white;" href="#">Account Info</a>
+						</li>
+						<li class="nav-select faq">
+							<a style="color: white;" href="#">FAQ</a>
+						</li>
+						<li class="nav-select terms">
+							<a style="color: white;" href="#">Our terms</a>
+						</li>
+						<li class="nav-select" id="exit">
+							<a style="color: white;" href="#">Exit</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<div class="win">
@@ -84,66 +83,503 @@
 			</a>
 		</div>
 		<!-- /////////////////////////////////////////////////////// -->
-		<div class="title-result22" id="title-result2" style="display:flex;flex-direction:column;">
+		<!-- <div class="title-result22" id="title-result2" style="display:flex;flex-direction:column;">
 			<div class="column-res" id="column-res1" style="display:flex;flex-direction:row;"></div>
 			<div class="column-res-main" id="column-res2" style="display:flex;flex-direction:row;"></div>
 			<div class="column-res" id="column-res3" style="display:flex;flex-direction:row;"></div>
+		</div> -->
+		<style>
+			.content_line {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.elementN {
+				width: 100%;
+				height: 0.3em;
+				border: 1px solid blue;
+				border-top: 0;
+				border-bottom: 0;
+			}
+
+			.element_side {
+				width: 100%;
+				height: 5px;
+				background: red;
+				margin-left: 3px;
+				margin-right: 3px;
+			}
+
+			.elementNFirst {
+				width: 100%;
+				height: 0.3em;
+
+				border: 1px solid blue;
+				border-top: 0;
+				border-bottom: 0;
+				border-left: 0;
+			}
+
+			.invidible_elements {
+				width: 100%;
+				height: 10px;
+				border: 1px solid blue;
+				border-top: 0;
+				border-bottom: 0;
+				border-left: 0;
+				visibility: hidden;
+			}
+
+			.elementNLast {
+				width: 100%;
+				height: 0.3em;
+
+				border: 1px solid blue;
+				border-top: 0;
+				border-bottom: 0;
+				border-right: 0;
+			}
+
+			.block_elements_line {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.element_line_column {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.element_line {
+				width: 100%;
+			}
+
+			/* d --> */
+
+			.element_line_side {
+				width: 50%;
+			}
+
+			/* d */
+
+			.line_center {
+				height: 4px;
+				width: 100%;
+				background: green;
+			}
+
+			.line_center_side {
+				display: flex;
+				flex-direction: row;
+				height: 4px;
+				width: 100%;
+
+			}
+
+			.rubin {
+				width: 1em;
+				height: 1em;
+			}
+
+			.main_rubin {
+				width: 1.2em;
+				height: 1.2em;
+			}
+
+			.container_line {
+				height: 150px;
+				display: flex;
+				align-items: center;
+			}
+		</style>
+
+		<div class="container_fluid">
+
+			<div class="container_line">
+				<div class="content_line">
+					<!--  -->
+					<div class="element_line_side">
+						<div class="element_line_column">
+
+							<div class="block_elements_line">
+								<div class="line_center_side">
+									<div class="element_side"></div>
+									<div class="element_side"></div>
+									<div class="element_side"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--  -->
+					<img src="img/Path.png" class="rubin">
+
+					<div class="element_line">
+						<div class="element_line_column">
+
+							<div class="block_elements_line">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+							<div class="block_elements_line">
+								<div class="line_center">
+
+								</div>
+							</div>
+							<div class="block_elements_line">
+								<div class="elementNFirst"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementNLast"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png" alt="" class="rubin">
+					<div class="element_line">
+						<div class="element_line_column">
+
+							<div class="block_elements_line">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+							<div class="block_elements_line">
+								<div class="line_center">
+
+								</div>
+							</div>
+							<div class="block_elements_line">
+								<div class="elementNFirst"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementN"></div>
+								<div class="elementNLast"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png" alt="" class="rubin ">
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png " alt=" " class="rubin ">
+					<div class="element_line ">
+						<div class="element_line_column">
+
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png" alt=" " class="main_rubin ">
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png " alt=" " class="rubin ">
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png " alt=" " class="rubin ">
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png " alt=" " class="rubin ">
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/Path.png " alt=" " class="rubin ">
+					<!--  -->
+					<div class="element_line_side ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="line_center_side ">
+									<div class="element_side "></div>
+									<div class="element_side "></div>
+									<div class="element_side "></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--  -->
+
+				</div>
+			</div>
+
 		</div>
 
+
 		<footer>
-			<h2 style="margin-top:40px;" class="gide">Steps Guide</h2>
-			<div class="row title-result">
-				<div class="col-lg-2 col-md-4 col-4 marg">
-					<img src="img/guide/choose.png" alt="">
-					<p class="desc">
+			<h2 style="margin-top:40px; " class="gide ">Steps Guide</h2>
+			<div class="row title-result ">
+				<div class="col-lg-2 col-md-4 col-4 marg ">
+					<img src="img/guide/choose.png " alt=" ">
+					<p class="desc ">
 						1. Choose Condition
 						<br> of your Prediction
 					</p>
 				</div>
-				<div class="col-md-4 col-4 col-lg-2 marg">
-					<img src="img/guide/prediction.png" alt="">
-					<p class="desc">
+				<div class="col-md-4 col-4 col-lg-2 marg ">
+					<img src="img/guide/prediction.png " alt=" ">
+					<p class="desc ">
 						2. Write Prediction
 						<br> and Bid Price
 					</p>
 				</div>
-				<div class="col-md-4 col-4 col-lg-2 marg">
-					<img src="img/guide/btc-cash.png" alt="">
-					<p class="desc">
+				<div class="col-md-4 col-4 col-lg-2 marg ">
+					<img src="img/guide/btc-cash.png " alt=" ">
+					<p class="desc ">
 						3. Pay by MetaMask
 						<br> your Bid Price
 					</p>
 				</div>
-				<div class="col-md-4 col-4 col-lg-2 marg">
-					<img src="img/guide/successful.png" alt="">
-					<p class="desc">
+				<div class="col-md-4 col-4 col-lg-2 marg ">
+					<img src="img/guide/successful.png " alt=" ">
+					<p class="desc ">
 						4. You Successful
 						<br> Place the Bid
 					</p>
 				</div>
-				<div class="col-md-4 col-4 col-lg-2 marg">
-					<img src="img/guide/wait.png" alt="">
-					<p class="desc">
+				<div class="col-md-4 col-4 col-lg-2 marg ">
+					<img src="img/guide/wait.png " alt=" ">
+					<p class="desc ">
 						5. Wait for
 						<br> Prediction Date
 					</p>
 				</div>
-				<div class="col-md-4 col-4 col-lg-2 marg">
-					<img src="img/guide/btc-cash.png" alt="">
-					<p class="desc">
+				<div class="col-md-4 col-4 col-lg-2 marg ">
+					<img src="img/guide/btc-cash.png " alt=" ">
+					<p class="desc ">
 						6. Withdraw your
 						<br> Reward if you Win
 					</p>
 				</div>
-				<div class="your-prediction" style="margin-top:40px;margin-bottom:10px;">
+				<div class="your-prediction " style="margin-top:40px;margin-bottom:10px; ">
 					You always can see your current predictions in
-					<span class="bids-list">Bids List</span>
+					<span class="bids ">Bids List</span>
 
-					<div class="logo2" style="margin-top:30px;margin-bottom:10px;">
-						<img src="img/logo.svg" alt="logo">
+					<div class="logo2 " style="margin-top:30px;margin-bottom:10px; ">
+						<img src="img/logo.svg " alt="logo ">
 					</div>
 		</footer>
-		<div class="terms toggleable">
+		<div class="terms toggleable ">
 			<h1>Terms of Use</h1>
 			<h2>Chapter One</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -163,13 +599,19 @@
 				tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
 				suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 		</div>
-		<div class="faq toggleable">
-			<h1>faq</h1>
-			<div class="li">
-				<h2>Question One</h2>
+		<div class="faq toggleable ">
+			<h1>FAQ</h1>
+			<div class="li ">
+				<div class="sel-faq ">
+					<h2>Question One</h2>
+					<img src="img/down-arrow.svg " alt=" ">
+				</div>
 			</div>
-			<div class="li-sel">
-				<h2>Question Two</h2>
+			<div class="li-sel ">
+				<div class="sel-faq ">
+					<h2>Question Two</h2>
+					<img src="img/up-arrow.svg " alt=" ">
+				</div>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
 					aliquam erat volutpat.
 					<br> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
@@ -178,230 +620,295 @@
 					nulla facilisis at vero eros et
 					<br>accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 			</div>
-			<div class="li">
-				<h2>Question Three</h2>
+			<div class="li ">
+				<div class="sel-faq ">
+					<h2>Question Three</h2>
+					<img src="img/down-arrow.svg " alt=" ">
+				</div>
 			</div>
-			<div class="li">
-				<h2>Question Four</h2>
+			<div class="li ">
+				<div class="sel-faq ">
+					<h2>Question Four</h2>
+					<img src="img/down-arrow.svg " alt=" ">
+				</div>
 			</div>
-			<div class="li">
-				<h2>Question Five</h2>
+			<div class="li ">
+				<div class="sel-faq ">
+					<h2>Question Five</h2>
+					<img src="img/down-arrow.svg " alt=" ">
+				</div>
 			</div>
 		</div>
-		<div class="oracles-list toggleable">
+		<div class="oracles-list toggleable ">
 			<h1>Oracle List</h1>
-			<div class="row main">
-				<div class="col">Date</div>
-				<div class="col">Stock A</div>
-				<div class="col">Stock B</div>
-				<div class="col">Stock C</div>
-				<div class="col">Stock D</div>
-				<div class="col">Stock E</div>
-				<div class="col">Median</div>
+			<div class="row rowe main ">
+				<div class="col colum ">Date</div>
+				<div class="col colum ">Stock A</div>
+				<div class="col colum ">Stock B</div>
+				<div class="col colum ">Stock C</div>
+				<div class="col colum ">Stock D</div>
+				<div class="col colum ">Stock E</div>
+				<div class="col colum ">Median</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">
-					<a href="#">10200</a>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">
+					<a href="# " class="underline ">10200</a>
 				</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="row">
-				<div class="col">20.04.2018</div>
-				<div class="col">10200</div>
-				<div class="col">10300</div>
-				<div class="col">12000</div>
-				<div class="col">13900</div>
-				<div class="col">14000</div>
-				<div class="col">10300</div>
+			<div class="row rowe ">
+				<div class="col colum ">20.04.2018</div>
+				<div class="col colum ">10200</div>
+				<div class="col colum ">10300</div>
+				<div class="col colum ">12000</div>
+				<div class="col colum ">13900</div>
+				<div class="col colum ">14000</div>
+				<div class="col colum ">10300</div>
 			</div>
-			<div class="btn-menu">
-				<div class="btn-act">1</div>
-				<div class="btn">2</div>
+			<div class="btn-menu ">
+				<div class="btn-act ">1</div>
+				<div class="btn ">2</div>
 			</div>
 		</div>
-		<div class="bids-list toggleable">
+		<div class="bids-list toggleable ">
 			<h1>Your Bids List</h1>
-			<div class="row rowe main">
-				<div class="col colum">Your Bid</div>
-				<div class="col colum">Date</div>
-				<div class="col colum">Bet</div>
-				<div class="col colum">Result</div>
-				<div class="col colum">Status</div>
+			<div class="row rowe main ">
+				<div class="col colum ">Your Bid</div>
+				<div class="col colum ">Date</div>
+				<div class="col colum ">Bet</div>
+				<div class="col colum ">Result</div>
+				<div class="col colum ">Status</div>
 			</div>
-			<div class="row rowe">
-				<div class="col  colum high">1 Bitcoin = $10500</div>
-				<div class="col  colum high">1 Jule 2018</div>
-				<div class="col  colum high">2 ETH</div>
-				<div class="col  colum high ">Active Bid</div>
-				<div class="col  colum high active"></div>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $10500</div>
+				<div class="col colum high ">1 Jule 2018</div>
+				<div class="col colum high ">2 ETH</div>
+				<div class="col colum high ">Active Bid</div>
+				<div class="col colum high active "></div>
 			</div>
-			<div class="row rowe">
-				<div class="col  colum high">1 Bitcoin = $14200</div>
-				<div class="col  colum">1 June 2018</div>
-				<div class="col  colum">0.5 ETH</div>
-				<div class="col  colum">You Lose :(</div>
-				<div class="col  colum"></div>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $14200</div>
+				<div class="col colum ">1 June 2018</div>
+				<div class="col colum ">0.5 ETH</div>
+				<div class="col colum ">You Lose :(</div>
+				<div class="col colum "></div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $9600</div>
-				<div class="col colum">1 May 2018</div>
-				<div class="col colum">1 ETH</div>
-				<div class="col colum winer">You Won</div>
-				<div class="col colum with">
-					<a href="#">
-						<span class="green">Withdraw</span>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $9600</div>
+				<div class="col colum ">1 May 2018</div>
+				<div class="col colum ">1 ETH</div>
+				<div class="col colum winer ">You Won</div>
+				<div class="col colum with ">
+					<a href="# ">
+						<span class="green ">Withdraw</span>
 					</a>
 				</div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 March 2018</div>
-				<div class="col colum">0.5 ETH</div>
-				<div class="col colum winer">You Won</div>
-				<div class="col colum">
-					<a href="#" class="com">Complete</a>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 March 2018</div>
+				<div class="col colum ">0.5 ETH</div>
+				<div class="col colum winer ">You Won</div>
+				<div class="col colum ">
+					<a href="# " class="com ">Complete</a>
 				</div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 February 2018</div>
-				<div class="col colum">1 ETH</div>
-				<div class="col colum">You Lose :(</div>
-				<div class="col colum"></div>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 February 2018</div>
+				<div class="col colum ">1 ETH</div>
+				<div class="col colum ">You Lose :(</div>
+				<div class="col colum "></div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 December 2017</div>
-				<div class="col colum">2 ETH</div>
-				<div class="col colum">You Lose :(</div>
-				<div class="col colum"></div>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 December 2017</div>
+				<div class="col colum ">2 ETH</div>
+				<div class="col colum ">You Lose :(</div>
+				<div class="col colum "></div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 November 2017</div>
-				<div class="col colum">0.5 ETH</div>
-				<div class="col colum winer">You Won</div>
-				<div class="col colum with">
-					<a href="#">
-						<span class="green">Withdraw</span>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 November 2017</div>
+				<div class="col colum ">0.5 ETH</div>
+				<div class="col colum winer ">You Won</div>
+				<div class="col colum with ">
+					<a href="# ">
+						<span class="green ">Withdraw</span>
 					</a>
 				</div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 August 2017</div>
-				<div class="col colum">1 ETH</div>
-				<div class="col colum winer">You Won</div>
-				<div class="col colum">
-					<a href="#" class="com">Complete</a>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 August 2017</div>
+				<div class="col colum ">1 ETH</div>
+				<div class="col colum winer ">You Won</div>
+				<div class="col colum ">
+					<a href="# " class="com ">Complete</a>
 				</div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 Jule 2017</div>
-				<div class="col colum">0.5 ETH</div>
-				<div class="col colum">You Lose :(</div>
-				<div class="col colum"></div>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 Jule 2017</div>
+				<div class="col colum ">0.5 ETH</div>
+				<div class="col colum ">You Lose :(</div>
+				<div class="col colum "></div>
 			</div>
-			<div class="row rowe">
-				<div class="col colum high">1 Bitcoin = $6500</div>
-				<div class="col colum">1 June 2017</div>
-				<div class="col colum">1 ETH</div>
-				<div class="col colum">You Lose :(</div>
-				<div class="col colum"></div>
+			<div class="row rowe ">
+				<div class="col colum high ">1 Bitcoin = $6500</div>
+				<div class="col colum ">1 June 2017</div>
+				<div class="col colum ">1 ETH</div>
+				<div class="col colum ">You Lose :(</div>
+				<div class="col colum "></div>
 			</div>
-			<div class="btn-menu">
-				<div class="btn-act">1</div>
-				<div class="btn">2</div>
+			<div class="btn-menu ">
+				<div class="btn-act ">1</div>
+				<div class="btn ">2</div>
 			</div>
+		</div>
+		<div class="popup toggleable ">
+			<img src="img/title-popup.png " alt=" ">
+			<div class="line ">
+				<p class="input ">
+					Condition
+				</p>
+				<select name=" " id=" ">
+					<option value=" " disabled selected>Price will be Higher than</option>
+					<option value=" "></option>
+				</select>
+			</div>
+			<div class="line ">
+				<p class="input ">
+					Price prediction
+				</p>
+				<input type="text " placeholder="10000 ">
+			</div>
+			<div class="line ">
+				<p class="input ">
+					Your bet in ETH
+				</p>
+				<input class="eth " type="text " placeholder="2 ">
+			</div>
+			<a href="# ">
+				<div class="button ">
+					Create Prediction
+				</div>
+			</a>
+		</div>
+		<div class="mask1 toggleable ">
+			<h1>MetaMask transaction confirmation</h1>
+			<img src="img/metamask.png " alt=" ">
+			<h2>You pay 0.4 ETH for your Prediction</h2>
+			<div class="suc ">
+				<img src="img/succs.png " alt=" ">
+				<p>Transaction successfully confirmed</p>
+			</div>
+			<a href="# ">
+				<div class="button ">
+					ok
+				</div>
+			</a>
+		</div>
+		<div class="mask2 toggleable ">
+			<h1>MetaMask transaction confirmation</h1>
+			<img src="img/metamask.png " alt=" ">
+			<h2>You pay 0.4 ETH for your Prediction</h2>
+			<div class="suc ">
+				<img src="img/clock.png " alt=" ">
+				<p>Transaction successfully confirmed</p>
+			</div>
+			<a href="# ">
+				<div class="button ">
+					ok
+				</div>
+			</a>
 		</div>
 
 
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js ">
 		</script>
-		<script src="js/scripts.js"></script>
-		<script src="js/line.js"></script>
+		<script src="js/scripts.js "></script>
+		<script src="js/line.js "></script>
 
 		<style>
-			.diamond {
+			/* .diamond {
 				height: 20px;
 				width: 2vw;
 
@@ -448,7 +955,7 @@
 				border-top: none;
 				border-bottom: none;
 				border-left: none;
-			}
+			} */
 		</style>
 
 		</div>
