@@ -98,25 +98,50 @@
 
 			.elementN {
 				width: 100%;
-				height: 0.3em;
-				border: 1px solid blue;
+				height: 0.25em;
+				border: 0.01em solid #365A93;
 				border-top: 0;
 				border-bottom: 0;
+
+			}
+
+			.elementANegative {
+				width: 100%;
+				height: 0.25em;
+				border: 0.01em solid #365A93;
+				/* background: red; */
+				border-top: 0;
+				border-bottom: 0;
+				position: relative;
+				padding: 0;
+				margin: 0;
+			}
+
+			.elementAPositive {
+				width: 100%;
+				height: 0.25em;
+				/* background: green; */
+				border: 0.01em solid #365A93;
+				border-top: 0;
+				border-bottom: 0;
+				position: relative;
+				padding: 0;
+				margin: 0;
 			}
 
 			.element_side {
 				width: 100%;
-				height: 5px;
-				background: red;
-				margin-left: 3px;
-				margin-right: 3px;
+				height: 0.15em;
+				background: #3D5B8F;
+				margin-left: 0.08em;
+				margin-right: 0.08em;
 			}
 
 			.elementNFirst {
 				width: 100%;
-				height: 0.3em;
+				height: 0.25em;
 
-				border: 1px solid blue;
+				border: 0.01em solid #365A93;
 				border-top: 0;
 				border-bottom: 0;
 				border-left: 0;
@@ -124,8 +149,8 @@
 
 			.invidible_elements {
 				width: 100%;
-				height: 10px;
-				border: 1px solid blue;
+				height: 0.25em;
+				border: 0.02em solid #365A93;
 				border-top: 0;
 				border-bottom: 0;
 				border-left: 0;
@@ -134,9 +159,9 @@
 
 			.elementNLast {
 				width: 100%;
-				height: 0.3em;
+				height: 0.25em;
 
-				border: 1px solid blue;
+				border: 0.01em solid #365A93;
 				border-top: 0;
 				border-bottom: 0;
 				border-right: 0;
@@ -165,9 +190,9 @@
 			/* d */
 
 			.line_center {
-				height: 4px;
+				height: 0.1em;
 				width: 100%;
-				background: green;
+				background: #4C8FE3;
 			}
 
 			.line_center_side {
@@ -179,25 +204,93 @@
 			}
 
 			.rubin {
-				width: 1em;
-				height: 1em;
+				width: 0.6em;
+				height: 0.6em;
+				margin-right: -0.6px;
+				padding: 0;
+				margin-bottom: 0.02em;
+
 			}
 
 			.main_rubin {
-				width: 1.2em;
-				height: 1.2em;
+				width: 1em;
+				height: 1em;
+				margin-right: -0.6px;
+				margin-top: 0.12em;
 			}
 
 			.container_line {
-				height: 150px;
+				margin-top: 20px;
+				height: 5em;
 				display: flex;
 				align-items: center;
+				poristion: relative;
+			}
+
+			.price1,
+			.price2,
+			.price3,
+				{
+				position: absolute;
+				font-size: 1em;
+			}
+
+			.price1 {
+				position: absolute;
+				right: -0.9em;
+				bottom: 2em;
+				font-size: 0.5em;
+				font-weight: bold;
+				color: #2CD3EE;
+			}
+
+			.price2 {
+				position: absolute;
+				right: -0.5em;
+				bottom: 2.3em;
+				font-size: 0.6em;
+				font-weight: bold;
+				color: #B98AF5;
+			}
+
+			.price3 {
+				position: absolute;
+				right: -0.9em;
+				top: 2.3em;
+				font-size: 0.5em;
+				font-weight: bold;
+				color: #48C72F;
+			}
+
+			.container_fluid {
+				position: relative;
+			}
+
+			.positiv_stolbik {
+				position: absolute;
+				width: 100%;
+				height: 2em;
+				background: #48C72F;
+				transform: translateY(-100%);
+				top: 0.25em;
+			}
+
+			.negative_stolbik {
+				position: absolute;
+				width: 100%;
+				height: 0.95em;
+				background: red;
+			}
+
+			.image {
+				position: relative;
 			}
 		</style>
 
 		<div class="container_fluid">
 
-			<div class="container_line">
+
+			<div class="container_line" style="position:relative;">
 				<div class="content_line">
 					<!--  -->
 					<div class="element_line_side">
@@ -214,7 +307,12 @@
 						</div>
 					</div>
 					<!--  -->
-					<img src="img/Path.png" class="rubin">
+					<div class="image">
+						<span class="price1">$7000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
 
 					<div class="element_line">
 						<div class="element_line_column">
@@ -251,7 +349,13 @@
 						</div>
 					</div>
 
-					<img src="img/Path.png" alt="" class="rubin">
+					<div class="image">
+						<span class="price1">$3000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
+
 					<div class="element_line">
 						<div class="element_line_column">
 
@@ -276,18 +380,28 @@
 								<div class="elementNFirst"></div>
 								<div class="elementN"></div>
 								<div class="elementN"></div>
+								<div class="elementANegative"></div>
 								<div class="elementN"></div>
+								<div class="elementANegative">
+									<div class="negative_stolbik"></div>
+								</div>
 								<div class="elementN"></div>
-								<div class="elementN"></div>
-								<div class="elementN"></div>
-								<div class="elementN"></div>
-								<div class="elementN"></div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:1.5em;"></div>
+								</div>
+								<div class="elementANegative"></div>
 								<div class="elementNLast"></div>
 							</div>
 						</div>
 					</div>
 
-					<img src="img/Path.png" alt="" class="rubin ">
+					<div class="image">
+						<span class="price1">$4000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
+
 					<div class="element_line ">
 						<div class="element_line_column ">
 
@@ -314,16 +428,28 @@
 								<div class="elementN "></div>
 								<div class="elementN "></div>
 								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:1.5em;"></div>
+								</div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:1.8em;"></div>
+								</div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:0.2em;"></div>
+								</div>
 								<div class="elementN "></div>
 								<div class="elementNLast "></div>
 							</div>
 						</div>
 					</div>
 
-					<img src="img/Path.png " alt=" " class="rubin ">
+					<div class="image">
+						<span class="price1">$5000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
+
 					<div class="element_line ">
 						<div class="element_line_column">
 
@@ -346,9 +472,15 @@
 							</div>
 							<div class="block_elements_line ">
 								<div class="elementNFirst "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:1em;"></div>
+								</div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:1.2em;"></div>
+								</div>
+								<div class="elementANegative">
+									<div class="negative_stolbik" style="height:2.5em;"></div>
+								</div>
 								<div class="elementN "></div>
 								<div class="elementN "></div>
 								<div class="elementN "></div>
@@ -359,7 +491,163 @@
 						</div>
 					</div>
 
-					<img src="img/Path.png" alt=" " class="main_rubin ">
+					<div class="image">
+						<span class="price2">$6000</span>
+
+						<img src="img/Path.png" alt="" class="main_rubin">
+
+					</div>
+
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementAPositive">
+									<div class="positiv_stolbik" style="height:1.5em;">
+
+									</div>
+								</div>
+								<div class="elementAPositive">
+									<div class="positiv_stolbik" style="height:0.5em;">
+
+									</div>
+								</div>
+								<div class="elementAPositive">
+									<div class="positiv_stolbik">
+
+									</div>
+								</div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="image">
+						<span class="price3">$7000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
+
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementAPositive">
+									<div class="positiv_stolbik" style="height:2.5em;">
+
+									</div>
+								</div>
+								<div class="elementAPositive">
+									<div class="positiv_stolbik" style="height:0.1em;">
+
+									</div>
+								</div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="image">
+						<span class="price3">$8000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
+
+					<div class="element_line ">
+						<div class="element_line_column ">
+
+							<div class="block_elements_line ">
+								<div class="elementNFirst "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementAPositive">
+									<div class="positiv_stolbik" style="height:0.7em;">
+
+									</div>
+								</div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementN "></div>
+								<div class="elementNLast "></div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="line_center ">
+
+								</div>
+							</div>
+							<div class="block_elements_line ">
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+								<div class="invidible_elements"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="image">
+						<span class="price3">$9000</span>
+
+						<img src="img/Path.png" alt="" class="rubin">
+
+					</div>
+
 					<div class="element_line ">
 						<div class="element_line_column ">
 
@@ -395,115 +683,13 @@
 						</div>
 					</div>
 
-					<img src="img/Path.png " alt=" " class="rubin ">
-					<div class="element_line ">
-						<div class="element_line_column ">
+					<div class="image">
+						<span class="price3">$10000</span>
 
-							<div class="block_elements_line ">
-								<div class="elementNFirst "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementNLast "></div>
-							</div>
-							<div class="block_elements_line ">
-								<div class="line_center ">
+						<img src="img/Path.png" alt="" class="rubin">
 
-								</div>
-							</div>
-							<div class="block_elements_line ">
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-							</div>
-						</div>
 					</div>
 
-					<img src="img/Path.png " alt=" " class="rubin ">
-					<div class="element_line ">
-						<div class="element_line_column ">
-
-							<div class="block_elements_line ">
-								<div class="elementNFirst "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementNLast "></div>
-							</div>
-							<div class="block_elements_line ">
-								<div class="line_center ">
-
-								</div>
-							</div>
-							<div class="block_elements_line ">
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-							</div>
-						</div>
-					</div>
-
-					<img src="img/Path.png " alt=" " class="rubin ">
-					<div class="element_line ">
-						<div class="element_line_column ">
-
-							<div class="block_elements_line ">
-								<div class="elementNFirst "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementN "></div>
-								<div class="elementNLast "></div>
-							</div>
-							<div class="block_elements_line ">
-								<div class="line_center ">
-
-								</div>
-							</div>
-							<div class="block_elements_line ">
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-								<div class="invidible_elements"></div>
-							</div>
-						</div>
-					</div>
-
-					<img src="img/Path.png " alt=" " class="rubin ">
 					<!--  -->
 					<div class="element_line_side ">
 						<div class="element_line_column ">
